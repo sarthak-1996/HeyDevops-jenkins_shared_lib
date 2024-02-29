@@ -1,9 +1,7 @@
 def call(String project, String ImageTag, String hubUser){
     
     sh """
-     ls -l /var/run/docker.sock
      docker image build -t ${hubUser}/${project}:latest .
-     ls -l /var/run/docker.sock
     """
 }
 
