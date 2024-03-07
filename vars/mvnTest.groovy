@@ -1,4 +1,4 @@
 def call(){
-    sh 'apt install maven -y'
+    sh 'mvn --version'
     sh 'mvn test'
 }
