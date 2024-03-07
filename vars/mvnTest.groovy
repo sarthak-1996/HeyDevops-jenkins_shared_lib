@@ -1,4 +1,4 @@
 def call(){
-    sh 'sudo apt install maven -y'
+    sh 'apt install maven -y'
     sh 'mvn test'
 }
